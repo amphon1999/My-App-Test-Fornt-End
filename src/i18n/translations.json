@@ -1,0 +1,10 @@
+{
+    "en": {
+      "hello": "Hello",
+      "goodbye": "Goodbye"
+    },
+    "fr": {
+      "hello": "สวัสดี",
+      "goodbye": "ลาก่อน"
+    }
+  }
