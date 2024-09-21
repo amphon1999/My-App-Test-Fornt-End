@@ -61,63 +61,65 @@
     border-left: 100px solid #666;
   }
   .shape-1 {
-    width: 200px;
+    width: 100px;
     height: 100px;
     background-color: #666;
   }
   .shape-1:hover {
-    width: 200px;
+    width: 100px;
     height: 100px;
     background-color: #ffffff;
   }
+
   .shape-2 {
-    width: 100px;
-    height: 100px;
-    background-color: #666;
-  }
-  .shape-2:hover {
-    width: 100px;
-    height: 100px;
-    background-color: #ffffff;
-  }
-  .shape-3 {
     width: 100px;
     height: 100px;
     background-color: #666;
     border-radius: 50%;
   }
-  .shape-3:hover {
+  .shape-2:hover {
     width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+  .shape-3 {
+    width: 150px;
+    height: 100px;
+    background-color: #666;
+    border-radius: 50%;
+  }
+  .shape-3:hover {
+    width: 150px;
     height: 100px;
     background-color: #ffffff;
     border-radius: 50%;
   }
   .shape-4 {
     width: 150px;
-    height: 100px;
-    background-color: #666;
-    border-radius: 50%;
-  }
-  .shape-4:hover {
-    width: 150px;
-    height: 100px;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
-  .shape-5 {
-    width: 150px;
     height: 0;
     border-bottom: 100px solid #666;
     border-left: 25px solid white;
     border-right: 25px solid white;
   }
-  .shape-5:hover{
+  .shape-4:hover{
     width: 150px;
     height: 0;
     border-bottom: 100px solid #ffffff;
     border-left: 25px solid #ffa200;
     border-right: 25px solid #ffa200;
   }
+  .shape-5 {
+    width: 200px;
+    height: 100px;
+    background-color: #666;
+  }
+  .shape-5:hover {
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff;
+  }
+  
   .shape-6 {
     width: 150px;
     height: 100px;
@@ -131,6 +133,7 @@
     background: #ffffff;
     transform: skew(20deg);
   }
+  
   .grid-layout {
      background: white;
   }

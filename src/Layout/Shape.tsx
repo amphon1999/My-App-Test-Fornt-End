@@ -85,10 +85,10 @@ const ShapesAc: React.FC = () => {
         <Row gutter={[16, 16]} style={{ marginTop: 20 }}>
           {shapes.map((shape, index) => (
             <Col key={shape} span={8}>
-              <div className="bg-white hover:bg-[#ffa200] flex items-center justify-center p-6">
+              <div onClick={() => handleShapeClick(index)} className="bg-white hover:bg-[#ffa200] flex items-center justify-center p-6">
                 <div
                   className={`shape ${shape}`}
-                  onClick={() => handleShapeClick(index)}
+                  
                 />
               </div>
             </Col>

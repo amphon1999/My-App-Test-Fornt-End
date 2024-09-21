@@ -51,22 +51,20 @@ const FormComponent = () => {
         <div className="flex items-center justify-center">
           <div className="w-full">
             <Form.Item
-              label={t('text.mname')}
+              label={t("text.mname")}
               name="mname"
               rules={[{ required: true, message: "กรุณากรอกคำนำหน้า" }]}
             >
-              <div className="">
-                <Select placeholder="คำนำหน้า">
-                  <Select.Option value="mr">นาย</Select.Option>
-                  <Select.Option value="miss">นางสาว</Select.Option>
-                  <Select.Option value="ms">นาง</Select.Option>
-                </Select>
-              </div>
+              <Select placeholder="คำนำหน้า">
+                <Select.Option value="mr">นาย</Select.Option>
+                <Select.Option value="miss">นางสาว</Select.Option>
+                <Select.Option value="ms">นาง</Select.Option>
+              </Select>
             </Form.Item>
           </div>
           <div className="w-full">
             <Form.Item
-              label={t('text.name')}
+              label={t("text.name")}
               name="name"
               rules={[{ required: true, message: "กรุณากรอกชื่อจริง" }]}
             >
@@ -75,7 +73,7 @@ const FormComponent = () => {
           </div>
           <div className="w-full">
             <Form.Item
-              label={t('text.lname')}
+              label={t("text.lname")}
               name="surname"
               rules={[{ required: true, message: "กรุณากรอกนามสกุล" }]}
             >
@@ -87,7 +85,7 @@ const FormComponent = () => {
         <div className="flex">
           <div className="w-[600px]">
             <Form.Item
-              label={t('text.birthday')}
+              label={t("text.birthday")}
               name="dob"
               rules={[{ required: true, message: "กรุณาเลือกวันเกิด" }]}
             >
@@ -96,7 +94,7 @@ const FormComponent = () => {
           </div>
           <div className="w-full">
             <Form.Item
-              label={t('text.nationality')}
+              label={t("text.nationality")}
               name="nationality"
               rules={[{ required: true, message: "กรุณาเลือกสัญชาติ" }]}
             >
@@ -108,7 +106,7 @@ const FormComponent = () => {
           </div>
         </div>
 
-        <Form.Item label={t('text.idCard')} required>
+        <Form.Item label={t("text.idCard")} required>
           <div className="flex items-center space-x-2">
             <Form.Item
               name="idcard1"
@@ -167,29 +165,29 @@ const FormComponent = () => {
           </div>
         </Form.Item>
         <Form.Item
-          label= {t('text.gender')}
+          label={t("text.gender")}
           name="gender"
           rules={[{ required: true, message: "กรุณาเลือกเพศ" }]}
         >
           <Radio.Group>
-            <Radio value="male">{t('text.male')}</Radio>
-            <Radio value="female">{t('text.female')}</Radio>
-            <Radio value="notgender">{t('text.notgender')}</Radio>
+            <Radio value="male">{t("text.male")}</Radio>
+            <Radio value="female">{t("text.female")}</Radio>
+            <Radio value="notgender">{t("text.notgender")}</Radio>
           </Radio.Group>
         </Form.Item>
         <Form.Item
-          label={t('text.phone')}
+          label={t("text.phone")}
           name="phone"
           rules={[{ required: true, message: "กรุณากรอกหมายเลขโทรศัพท์" }]}
         >
           <Input />
         </Form.Item>
 
-        <Form.Item label={t('text.passport')} name="passport">
+        <Form.Item label={t("text.passport")} name="passport">
           <Input />
         </Form.Item>
         <Form.Item
-          label={t('text.salary')}
+          label={t("text.salary")}
           name="salary"
           rules={[{ required: true, message: "กรุณากรอกเงินเดือน" }]}
         >
@@ -202,10 +200,10 @@ const FormComponent = () => {
               onClick={handleClear}
               style={{ marginLeft: 8 }}
             >
-              {t('text.clr')}
+              {t("text.clr")}
             </Button>
             <Button type="default" htmlType="submit">
-              {t('text.save')}
+              {t("text.save")}
             </Button>
           </div>
         </Form.Item>
