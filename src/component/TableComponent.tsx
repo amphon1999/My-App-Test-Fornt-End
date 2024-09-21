@@ -36,30 +36,34 @@ const TableComponent = () => {
   };
 
   const handleUpdate = (values: any) => {
+    console.log("Form values:", values); // ตรวจสอบค่าที่ได้จากฟอร์ม
     const idcard =
       values.idcard1 +
       values.idcard2 +
       values.idcard3 +
       values.idcard4 +
       values.idcard5;
+    
+    console.log("ID card:", idcard); // ตรวจสอบการรวมของเลขบัตรประชาชน
+    
     const updatedPerson = {
       ...editingPerson,
+      idcard: idcard,
       mname: values.mname,
       name: values.name,
       surname: values.surname,
       dob: values.dob.format("MM-DD-YYYY"),
       nationality: values.nationality,
-      idcard: idcard,
       gender: values.gender,
       phone: values.phone,
       passport: values.passport,
       salary: values.salary,
-
-      // Use the combined ID card string
     };
+  
     dispatch(editPerson(updatedPerson));
     setIsModalVisible(false);
   };
+  
 
   const handleDeleteSelected = () => {
     selectedRowKeys.forEach((key) => {
